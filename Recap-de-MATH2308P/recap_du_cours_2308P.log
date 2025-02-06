@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  6 FEB 2025 11:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  6 FEB 2025 11:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -909,7 +909,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box73
 \tcb@temp=\box74
 )
-No file recap_du_cours_2308P.aux.
+(./recap_du_cours_2308P.aux)
 \openout1 = `recap_du_cours_2308P.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -944,6 +944,7 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -953,12 +954,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package hyperref Info: Link coloring OFF on input line 52.
+
+(./recap_du_cours_2308P.out) (./recap_du_cours_2308P.out)
 \@outlinefile=\write4
 \openout4 = `recap_du_cours_2308P.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1054,10 +1054,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
 
-[2]
-No file recap_du_cours_2308P.toc.
+[2] (./recap_du_cours_2308P.toc)
 \tf@toc=\write5
 \openout5 = `recap_du_cours_2308P.toc'.
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1072,23 +1072,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
-
-
-Package rerunfilecheck Warning: File `recap_du_cours_2308P.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `recap_du_cours_2308P.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0B7AB2C8885A19FBE5B9C235E2024ABB;104.
+Package rerunfilecheck Info: File `recap_du_cours_2308P.out' has not changed.
+(rerunfilecheck)             Checksum: D6042AF5A5E5CBCCCFBE415A7410FEB6;104.
  ) 
 Here is how much of TeX's memory you used:
- 29054 strings out of 474773
- 613160 string characters out of 5757724
+ 29069 strings out of 474773
+ 613552 string characters out of 5757724
  1922839 words of memory out of 5000000
- 50741 multiletter control sequences out of 15000+600000
- 575481 words of font info for 76 fonts, out of 8000000 for 9000
+ 50747 multiletter control sequences out of 15000+600000
+ 575489 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,97p,1017b,371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,97p,1017b,395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on recap_du_cours_2308P.pdf (3 pages).

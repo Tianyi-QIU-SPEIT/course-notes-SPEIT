@@ -1,2 +1,2 @@
 \babel@toc {french}{}\relax 
-\contentsline {part}{Avant-propos}{2}{section*.1}%
+\contentsline {part}{Introduction}{2}{section*.1}%
