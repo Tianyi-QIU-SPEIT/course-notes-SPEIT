@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage{graphicx} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{ctex}
+\usepackage{tcolorbox}
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhead[L]{École d'Ingénieurs Paris-SJTU}
+\fancyhead[R]{Corentin邱天意}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\makeatletter
+\@addtoreset{section}{part}
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    {\parindent \z@ \raggedright
+     \interlinepenalty \@M
+     \normalfont\raggedright
+     \ifnum \c@secnumdepth >\m@ne
+       \LARGE\bfseries \partname\nobreakspace\thepart
+       \par\nobreak
+     \fi
+     \huge \bfseries #2%
+     \markboth{}{}\par}%
+    \nobreak
+    \vskip 3ex
+    \@afterheading}
+\renewcommand\partname{Topic}
+\makeatother
+
+\title{\textbf{Récapitulatif du Cours :\\ MATH2308P}}
+\author{Corentin邱天意}
+\date{Semestre 2024-2025-2}
+
+\begin{document}
+
+\maketitle
+
+\centerline{\includegraphics[scale=0.4]{sjtu}}
+
+\newpage
+
+\section*{Avant-propos}
+\addcontentsline{toc}{part}{Avant-propos}
+
+
+
+\newpage
+\tableofcontents
+
+\newpage
+
+
+\end{document}
