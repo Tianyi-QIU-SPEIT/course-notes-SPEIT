@@ -1,0 +1,134 @@
+\documentclass{article}
+
+\usepackage{graphicx} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{ctex}
+\usepackage{tcolorbox}
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhead[L]{École d'Ingénieurs Paris-SJTU}
+\fancyhead[R]{Corentin邱天意}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\makeatletter
+\@addtoreset{section}{part}
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    {\parindent \z@ \raggedright
+     \interlinepenalty \@M
+     \normalfont\raggedright
+     \ifnum \c@secnumdepth >\m@ne
+       \LARGE\bfseries \partname\nobreakspace\thepart
+       \par\nobreak
+     \fi
+     \huge \bfseries #2%
+     \markboth{}{}\par}%
+    \nobreak
+    \vskip 3ex
+    \@afterheading}
+\renewcommand\partname{Topic}
+\makeatother
+
+\title{\textbf{Notes du Cours : MATH2308P}\\ Cours assuré par Sébastien GODILLON}
+\author{Fiche \LaTeX \space rédigé par Corentin邱天意}
+\date{Semestre 2024-2025-2}
+
+\begin{document}
+
+\maketitle
+
+\centerline{\includegraphics[scale=0.4]{sjtu}}
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\part{Espaces vectoriels normés}
+
+On commence notre travail avec les espaces vectoriels normés. 
+
+Dans tout ce chapitre, $E$ désigne un $\mathbb{K}$-espace vectoriel, où $\mathbb{K} = \mathbb{R}$ ou $\mathbb{C}$, et on note $0_E$ le vecteur nul de $E$.
+
+
+\section{Cours 18 février: Normes et distances}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Définition 1.1]
+
+Une \textbf{norme} sur $E$ est une application de $E$ dans $\mathbb{R}$. Elle a pour notation $N$, et elle vérifie les propriétés suivantes:
+
+\begin{itemize}
+ \item $\forall x \in E, N(x)=0 \Rightarrow x = 0_E$  \hfill (séparation)
+ \item $\forall (\lambda, x) \in \mathbb{K} \times E, N(\lambda x) = |\lambda|N(x)$  \hfill (homogénéité absolue)
+ \item $\forall (x,y) \in E^2, \quad N(x+y) \leq N(x) + N(y)$ \hfill (sous-additivité)
+ 
+\end{itemize}
+
+\tcblower
+
+Dans le deuxième point, $|\lambda|$ peut représenter la valeur absolue(en $\mathbb{R}$) ou le module(en $\mathbb{C}$), et \c ca dépend de l'ensemble dans lequel on se place.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Définition 1.2]
+
+Si $N$ est une norme sur $E$, alors on dit que $(E,N)$ est un \textbf{espace vectoriel normé}.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Proposition 1.1]
+
+Soit $N$ une norme sur $E$, alors on a:
+
+\begin{itemize}
+    \item $N(0_E) = 0$ \hfill (réciproque de la séparation)
+    \item $\forall x \in E, \quad N(x) \geq 0$ \hfill (positivité)
+    \item $\forall (x,y) \in E^2, \quad |N(x) - N(y)| \leq N(x - y)$ \hfill (``continuité'')
+    
+\end{itemize}
+
+\tcblower
+
+Petit remarque 1: la première nous donne l'équivalence dans la propriété de séparation: $\forall x \in E, N(x) = 0 \Longleftrightarrow x = 0_E$
+
+Petit remarque 2 : dans la troisième, $|N(x) - N(y)|$ désigne la valeur absolue puisque la norme est une application dans $\mathbb{R}$.
+
+\end{tcolorbox}
+
+\paragraph{Preuve}: Soient $(x, y) \in E^2$.
+\begin{itemize}
+ \item $N(0_{E}) = N(0.x) = |0| N(x) = 0$, donc on a: \underline{$N(0_E) = 0$}.
+          \newline Remarque: ne mélangez pas $0_E$ et $0$.
+ \item D'après la propriété qu'on vient de démontrer, on a:
+          \[
+          0 = N(0_{E}) = N(x-x) = N(x+(-x)) 
+          \]
+          De plus, par sous-additivité, on a: 
+          \[
+          N(x+(-x)) \leq N(x) + N(-x) = N(x) + |-1|N(x) = 2N(x)
+          \]
+          On obtient \underline{$N(x) \geq 0$} en mettent les deux relations ensemble.
+ \item Rappel: $|x| \geq k \Longleftrightarrow -k \leq x \leq k$. 
+          \newline Donc il faut démontrer les inégalités à gauche et à droite.
+ 
+ 
+\end{itemize}
+
+
+\end{document}
