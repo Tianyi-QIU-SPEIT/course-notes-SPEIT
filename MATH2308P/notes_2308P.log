@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  21 FEB 2025 21:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.17)  22 FEB 2025 07:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1093,21 +1093,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
 
-[5] (./notes_2308P.aux)
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.69003pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.69003pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.69003pt}.
+
+[6] (./notes_2308P.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `notes_2308P.out' has not changed.
-(rerunfilecheck)             Checksum: 99E1F9A2367B9356466FFEAC5A5826F0;441.
+(rerunfilecheck)             Checksum: 145D5888EF10CA8E425BCC5630C959B7;624.
  ) 
 Here is how much of TeX's memory you used:
- 29201 strings out of 474773
- 616134 string characters out of 5757724
+ 29202 strings out of 474773
+ 616150 string characters out of 5757724
  1933839 words of memory out of 5000000
- 50866 multiletter control sequences out of 15000+600000
+ 50867 multiletter control sequences out of 15000+600000
  587544 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,11n,97p,1008b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on notes_2308P.pdf (5 pages).
+Output written on notes_2308P.pdf (6 pages).

@@ -173,7 +173,7 @@ Les normes sont les objets qui généralisent la valeur absolue et le module pou
 
 
 
-\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=Rappel 1.1]
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Rappel 1.1]
 
 Pour qu'on puisse commencer à étudier les distances, on rappelle que:
 
@@ -187,12 +187,26 @@ Pour qu'on puisse commencer à étudier les distances, on rappelle que:
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Définition 1.3]
 
+Soit $(E,N)$ un espace vectoriel normé, alors l'application:
+\[
+d : 
+\begin{cases} 
+E^{2} \to [ 0, +\infty [ \\
+(a,b) \mapsto d(a,b) = N(a-b)
+\end{cases}
+\]
+est une \textbf{distance} sur E. De plus, elle vérifie 3 propriétés:
+
 
 \begin{itemize}
- \item 
- \item 
- \item  
+ \item $\forall (a,b)\in E^{2}, d(a,b) = d(b,a)$ \hfill (symétrie)
+ \item $\forall (a,b)\in E^{2}, d(a,b) = 0 \Longleftrightarrow a=b$ \hfill (séparation)
+ \item $\forall (a,b,c) \in E^{3}, d(a,b) \leq d(a,c) + d(c,b)$ \hfill (inégalité triangulaire)
 \end{itemize}
+
+\tcblower
+
+Remarque: la deuxième propriété se démontre avec la séparation des normes, et la troisième avec la homogénéité absolue.
 
 
 
@@ -200,21 +214,40 @@ Pour qu'on puisse commencer à étudier les distances, on rappelle que:
 
 \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Définition 1.4]
 
+On dit que $(E,N,d)$ est un \textbf{espace métrique}.
 
 \end{tcolorbox}
 
+\begin{tcolorbox}[colback=purple!5!white,colframe=purple!75!black,title=Remarque de Corentin]
+
+Si vous regardez les autres livres de topologie, vous trouverez que les espaces métriques sont définis avec un ensemble(pas forcément un espace vectoriel) et une distance qui vérifie les trois propriétés. Donc deux trucs.
+
+Ici on utilise un triplet car on a commencé avec un espace vectoriel, définit une norme et puis la distance. L'espace défini de cette manière est bien un espace métrique car il vérifie toutes les conditions, mais il est de plus un espace vectoriel.
+
+Donc notez bien que ce n'est pas une vraie ``définition'', mais \c ca suffit si on travaille dans les espaces vectoriels normés.
+
+\end{tcolorbox}
+
+
+
+
+
+
+
 \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Propriété 1.1]
 
+La translation et l'homothétie, on les a vu au MATH1301P, dans le chapitre de la géométrie euclidienne. La norme vérifie aussi ces deux propriétés:
+
 \begin{itemize}
- \item 
- \item 
+ \item $d$ est \textbf{invariante par translation}, c'est-à-dire: $\forall(t,x,y)\in E^{3}, d(x+t, y+t) = d(x,y)$.
+ \item $d$ est \textbf{absoluement homogène par homothétie}, c'est-à-dire: $\forall(\lambda, x, y) \in \mathbb{K} \times E^{2}, d(\lambda x, \lambda y) = |\lambda|d(x,y)$.
 \end{itemize}
 
 \end{tcolorbox}
 
 \begin{tcolorbox}[colback=yellow!5!white,colframe=yellow!75!black,title=Remarque 1.3]
 
-
+On peut aussi faire de la topologie dans les espaces métriques, la théorie est plus générale(car on a pas besoin de la structure d'espace vectoriel).
 
 \end{tcolorbox}
 
@@ -222,7 +255,7 @@ Pour qu'on puisse commencer à étudier les distances, on rappelle que:
 
 
 
-
+\section{Cours 25 février: HAHAHA}
 
 
 
