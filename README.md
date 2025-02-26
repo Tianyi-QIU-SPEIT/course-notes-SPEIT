@@ -1,2 +1,2 @@
-# Recap-de-MATH2308P
-Récapitulatif de MATH2308P, Topologie et Calculs différentiels
+# Notes-de-MATH2308P
+Notes du cours MATH2308P, Topologie et Calculs différentiels
