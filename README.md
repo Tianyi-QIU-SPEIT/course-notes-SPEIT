@@ -15,8 +15,8 @@ Quelques précisions sur les codes sur les dossiers:
 J'ai décidé de tout regrouper au même endroit. Pour le moment, il y a les cours sur:
 
 * La topologie des espaces vectoriels normés (MATH2308P)
-* Les équations différentielles et la géométrie différentielle (MATH2310P, sans surfaces)
-* Le langage des maths (FL1902P, sans récurrences)
+* Les équations différentielles et la géométrie différentielle (MATH2310P)
+* Le langage des maths (FL1902P)
 * L'optique ondulatoire(PHY2303P, résumé)
 * L'électromagnétisme en régime statique(PHY2304P, résumé)
 * La mécanique des solides(PHY2304P, résumé des chapitres 3 et 4)
